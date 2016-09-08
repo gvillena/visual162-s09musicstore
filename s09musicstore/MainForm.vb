@@ -68,11 +68,13 @@
         If ComprarC1 Then
             Total = Total + 3.99
             btnComprarC1.Text = "Quitar"
+            ComprarC1 = False
         Else
             Total = Total - 3.99
             btnComprarC1.Text = "Comprar"
+            ComprarC1 = True
         End If
-        lblTotal.Text = String.Format("S/. 0.00", Total)
+        lblTotal.Text = String.Format("S/. {0:0.00}", Total)
 
     End Sub
 
@@ -80,11 +82,13 @@
         If ComprarC2 Then
             Total = Total + 3.2
             btnComprarC2.Text = "Quitar"
+            ComprarC2 = False
         Else
             Total = Total - 3.2
             btnComprarC2.Text = "Comprar"
+            ComprarC2 = True
         End If
-        lblTotal.Text = String.Format("S/. 0.00", Total)
+        lblTotal.Text = String.Format("S/. {0:0.00}", Total)
 
     End Sub
 
@@ -92,11 +96,13 @@
         If ComprarC3 Then
             Total = Total + 3.5
             btnComprarC3.Text = "Quitar"
+            ComprarC3 = False
         Else
             Total = Total - 3.5
             btnComprarC3.Text = "Comprar"
+            ComprarC3 = True
         End If
-        lblTotal.Text = String.Format("S/. 0.00", Total)
+        lblTotal.Text = String.Format("S/. {0:0.00}", Total)
 
     End Sub
 
@@ -104,10 +110,12 @@
         If ComprarC4 Then
             Total = Total + 4.3
             btnComprarC4.Text = "Quitar"
+            ComprarC4 = False
         Else
             Total = Total - 4.3
             btnComprarC4.Text = "Comprar"
+            ComprarC4 = True
         End If
-        lblTotal.Text = String.Format("S/. 0.00", Total)
+        lblTotal.Text = String.Format("S/. {0:0.00}", Total)
     End Sub
 End Class

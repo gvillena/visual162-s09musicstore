@@ -57,11 +57,15 @@ Partial Class MainForm
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.tlpLista.SuspendLayout()
         Me.tlpHeader.SuspendLayout()
         CType(Me.pbCover, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'tlpLista
@@ -93,7 +97,7 @@ Partial Class MainForm
         Me.tlpLista.Controls.Add(Me.btnComprarC4, 4, 4)
         Me.tlpLista.Controls.Add(Me.Label18, 1, 0)
         Me.tlpLista.Controls.Add(Me.Label9, 1, 2)
-        Me.tlpLista.Location = New System.Drawing.Point(17, 140)
+        Me.tlpLista.Location = New System.Drawing.Point(17, 173)
         Me.tlpLista.Name = "tlpLista"
         Me.tlpLista.RowCount = 5
         Me.tlpLista.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -327,7 +331,7 @@ Partial Class MainForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(127, 37)
+        Me.Label2.Location = New System.Drawing.Point(127, 70)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(56, 21)
         Me.Label2.TabIndex = 3
@@ -340,7 +344,7 @@ Partial Class MainForm
         Me.tlpHeader.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.7033!))
         Me.tlpHeader.Controls.Add(Me.pbCover, 0, 0)
         Me.tlpHeader.Controls.Add(Me.TableLayoutPanel3, 1, 0)
-        Me.tlpHeader.Location = New System.Drawing.Point(17, 20)
+        Me.tlpHeader.Location = New System.Drawing.Point(17, 53)
         Me.tlpHeader.Name = "tlpHeader"
         Me.tlpHeader.RowCount = 1
         Me.tlpHeader.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -402,11 +406,13 @@ Partial Class MainForm
         Me.lblPrecio.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.lblPrecio.AutoSize = True
         Me.lblPrecio.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrecio.Location = New System.Drawing.Point(165, 67)
+        Me.lblPrecio.Location = New System.Drawing.Point(179, 67)
+        Me.lblPrecio.Margin = New System.Windows.Forms.Padding(3, 0, 0, 0)
         Me.lblPrecio.Name = "lblPrecio"
-        Me.lblPrecio.Size = New System.Drawing.Size(88, 28)
+        Me.lblPrecio.Size = New System.Drawing.Size(77, 28)
         Me.lblPrecio.TabIndex = 2
-        Me.lblPrecio.Text = "S/. 23.90"
+        Me.lblPrecio.Text = "S/. 3.99"
+        Me.lblPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'ImageList1
         '
@@ -424,7 +430,7 @@ Partial Class MainForm
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.17583!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.lblTotal, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(17, 379)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(17, 412)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -435,9 +441,10 @@ Partial Class MainForm
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 12)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(3, 10)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 13)
+        Me.Label1.Size = New System.Drawing.Size(44, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "TOTAL"
         '
@@ -445,20 +452,64 @@ Partial Class MainForm
         '
         Me.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.lblTotal.AutoSize = True
-        Me.lblTotal.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotal.Location = New System.Drawing.Point(275, 3)
+        Me.lblTotal.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotal.Location = New System.Drawing.Point(276, 3)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(86, 30)
+        Me.lblTotal.Size = New System.Drawing.Size(85, 30)
         Me.lblTotal.TabIndex = 1
         Me.lblTotal.Text = "S/. 0.00"
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.BackColor = System.Drawing.Color.Indigo
+        Me.TableLayoutPanel2.ColumnCount = 2
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.75!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.25!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Label15, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button1, 1, 0)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 1
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(398, 36)
+        Me.TableLayoutPanel2.TabIndex = 6
+        '
+        'Label15
+        '
+        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(3, 7)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Padding = New System.Windows.Forms.Padding(3, 0, 0, 0)
+        Me.Label15.Size = New System.Drawing.Size(127, 21)
+        Me.Label15.TabIndex = 0
+        Me.Label15.Text = "Music App Store"
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(372, 6)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(23, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "X"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(400, 428)
+        Me.ClientSize = New System.Drawing.Size(398, 468)
         Me.ControlBox = False
+        Me.Controls.Add(Me.TableLayoutPanel2)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.tlpHeader)
         Me.Controls.Add(Me.Label2)
@@ -475,6 +526,8 @@ Partial Class MainForm
         Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -512,4 +565,7 @@ Partial Class MainForm
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Label1 As Label
     Friend WithEvents lblTotal As Label
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Button1 As Button
 End Class
